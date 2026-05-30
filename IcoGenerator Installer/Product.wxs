@@ -5,16 +5,13 @@
 	<Package
 		Name="IcoGenerator"
 		Manufacturer="James Sutherland"
-		Version="0.0.1"
+		Version="1.0.0"
 		UpgradeCode="8B39FEC2-1CDA-4121-BC8F-63ECA611B491"
 		Language="1033"
 		Scope="perMachine">
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of IcoGenerator is already installed." />
-
 		<MediaTemplate EmbedCab="yes" />
-
-		<Icon Id="AppIcon.ico" SourceFile="..\app.ico" />
 		<Property Id="ARPPRODUCTICON" Value="AppIcon.ico" />
 
 		<WixVariable Id="WixUILicenseRtf" Value="LICENSE.rtf" />

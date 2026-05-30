@@ -15,12 +15,27 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-________________________________________
+
+--------------------------------------------------------------------
 Third-Party Notices
-This software includes components from SkiaSharp.
+--------------------------------------------------------------------
+
 SkiaSharp
 Copyright (c) Microsoft Corporation
-Licensed under the MIT License.
-The MIT License for SkiaSharp is available from the SkiaSharp project and
-applies to the SkiaSharp components included with this software.
 
+Licensed under the MIT License.
+
+This software includes SkiaSharp, which is licensed under the MIT License.
+
+--------------------------------------------------------------------
+
+WiX Toolset
+Copyright (c) .NET Foundation and contributors
+
+Licensed under the Microsoft Reciprocal License (MS-RL).
+
+This installer was created using the WiX Toolset.
+The WiX Toolset is licensed under the Microsoft Reciprocal License (MS-RL).
+
+For more information, see:
+https://wixtoolset.org/
