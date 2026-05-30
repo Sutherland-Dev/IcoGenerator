@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+
+	<Package
+		Name="IcoGenerator"
+		Manufacturer="James Sutherland"
+		Version="0.0.1"
+		UpgradeCode="8B39FEC2-1CDA-4121-BC8F-63ECA611B491"
+		Language="1033"
+		Scope="perMachine">
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of IcoGenerator is already installed." />
+
+		<MediaTemplate EmbedCab="yes" />
+
+		<Icon Id="AppIcon.ico" SourceFile="..\app.ico" />
+		<Property Id="ARPPRODUCTICON" Value="AppIcon.ico" />
+
+		<WixVariable Id="WixUILicenseRtf" Value="LICENSE.rtf" />
+
+		<StandardDirectory Id="ProgramFiles6432Folder">
+			<Directory Id="INSTALLDIR" Name="IcoGenerator">
+				<Component Id="cmpMainExe" Guid="0CA86DC9-5B3F-40B7-B704-4FEF99F26933">
+					<File Id="filMainExe" Source="..\IcoGenerator\publish\win-x64\IcoGenerator.exe" KeyPath="yes" />
+
+					<Environment
+						Id="envPath"
+						Name="PATH"
+						Value="[INSTALLDIR]"
+						Action="set"
+						Part="last"
+						Permanent="no"
+						System="yes" />
+				</Component>
+			</Directory>
+		</StandardDirectory>
+
+		<Feature Id="MainFeature" Title="IcoGenerator" Level="1">
+			<ComponentRef Id="cmpMainExe" />
+		</Feature>
+
+		<ui:WixUI Id="WixUI_InstallDir" />
+		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
+	</Package>
+</Wix>

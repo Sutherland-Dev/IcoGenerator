@@ -1,0 +1,11 @@
+<Project Sdk="WixToolset.Sdk/6.0.2" ToolsVersion="4.0">
+  <PropertyGroup>
+    <OutputType>Package</OutputType>
+    <OutputName>IcoGenerator_Installer</OutputName>
+    <Platform>x64</Platform>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.UI.wixext" Version="6.0.2" />
+  </ItemGroup>
+  <Target Name="CollectSuggestedVisualStudioComponentIds" />
+</Project>
